@@ -9,7 +9,7 @@ void mousePressed() {
       int min = minute();
       int h = hour();
       text("" + d + "-" + m + "-" + y +" " + h + ":" + min + ":" + s + ":" + mm, 50, 50);
-      beginRecord(PDF, "cards/card" + d + "-" + m + "-" + y +" " + h + ":" + min + ":" + s + ":" + mm + ".pdf");
+      beginRecord(PDF, "cards/card" + d + "-" + m + "-" + y +" " + h + "_" + min + "_" + s + "_" + mm + ".pdf");
       colorMode(HSB);
       editable = false;
       current_shape = -1;
